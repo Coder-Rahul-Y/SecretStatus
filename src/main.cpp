@@ -1,5 +1,5 @@
-#include<iostream>
 #include<SFML/Audio.hpp>
+#include<iostream>
 #include<string.h>
 #include<Windows.h>
 
@@ -19,13 +19,14 @@ int main(){
 
     //audio
     sf::SoundBuffer buf1, buf2, buf3;
-    buf1.loadFromFile("sound1.wav");
-    buf2.loadFromFile("sound2.ogg");
-    buf3.loadFromFile("sound3.wav");
+    buf1.loadFromFile("assets/sound1.wav");
+    buf2.loadFromFile("assets/sound2.ogg");
+    buf3.loadFromFile("assets/sound3.wav");
     sf::Sound snd[3];
     snd[0].setBuffer(buf1);
     snd[1].setBuffer(buf2);
     snd[2].setBuffer(buf3);
+
 
 
     for (int i = 0; i < msg.length(); i++)
@@ -36,7 +37,7 @@ int main(){
         snd[j].play();
         if (msg[i]==' ') Sleep(30);
 
-        Sleep(100);
+        Sleep(50);
     }
 
     system("cls");
