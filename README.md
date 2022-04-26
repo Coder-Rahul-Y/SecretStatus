@@ -1,4 +1,5 @@
 **It is a tiny personal project to print a sentence showing 'one and only one letter at a time'**
+
 **Additional features :**
     1. uses sound class from SFML library to create keypress sound.
 
