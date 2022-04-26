@@ -9,7 +9,7 @@ int main(){
 
     string msg;
     // char str[501];
-    cout<<"Enter your secret message : ";
+    cout<<"Enter your secret message :  ";
     getline(cin, msg);
 
     system("cls");
